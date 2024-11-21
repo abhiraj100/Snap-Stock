@@ -1,14 +1,14 @@
-body{
+body {
   background-color: black;
   color: white;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
 /* NAVBAR */
-.nav{
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,15 +16,15 @@ body::-webkit-scrollbar{
   gap: 8px;
 }
 
-.flex{
+.flex {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 10px;
 }
 
-.flex .items{
+.flex .items {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -34,29 +34,28 @@ body::-webkit-scrollbar{
   padding: 10px;
 }
 
-
-.flex .items img{
- max-width: 100%;
- height: auto;
- object-fit: cover;
- display: inline-block;
- border-radius: 10px;
- border: 2px solid rgb(243, 243, 240);
- transition: transform 0.5sec ease;
- cursor: pointer;
+.flex .items img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid rgb(243, 243, 240);
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
-.flex .items img:hover{
- transform: scale(1.05);
- border: 2px solid yellow;
+.flex .items img:hover {
+  transform: scale(1.05);
+  border: 2px solid yellow;
 }
 
-.img{
+.img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img img{
+.img img {
   width: 500px;
 }

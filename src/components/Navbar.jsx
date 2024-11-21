@@ -13,17 +13,18 @@ const Navbar = ({ setSearch }) => {
         <div className="button btn btn-outline-secondary mx-3" onClick={() => {setSearch("car"); navigate('/')}}>Car</div>
         <div className="button btn btn-outline-warning mx-3" onClick={() => {setSearch("fashion"); navigate('/')}}>Fashion</div>
         <div className="button btn btn-outline-light mx-3" onClick={() => {setSearch("animal"); navigate('/')}}>Animals</div>
-        <div className="button btn btn-outline-dark mx-3" onClick={() => {setSearch("technology"); navigate('/')}}>Technology</div>
+        <div className="button btn btn-outline-dark text-light mx-3" onClick={() => {setSearch("technology"); navigate('/')}}>Technology</div>
         <div className="button btn btn-outline-warning mx-3" onClick={() => {setSearch("business & finance");navigate('/')}}>Business & Finance</div>
         <div className="button btn btn-outline-primary mx-3" onClick={() => {setSearch("tokyo"); navigate('/')}}>Tokyo</div>
         <div className="button btn btn-outline-info mx-3" onClick={() => {setSearch("dubai"); navigate('/')}}>Dubai</div>
+        
     {
-
-      location.pathname =='/saved'?(
+      location.pathname =='/saved' ? (
         <div className="button btn btn-warning mx-3" onClick={() => navigate('/')}>Home</div>)
-        :(<div className="button btn btn-warning mx-3" onClick={() => navigate('/saved')}>Saved</div>)
+         : (<div className="button btn btn-warning mx-3" onClick={() => navigate('/saved')}>Saved</div>)
     }
 
+        {/* Search Bar  */}
         <div className="container my-4" style={{
           width: "780px"
         }}>

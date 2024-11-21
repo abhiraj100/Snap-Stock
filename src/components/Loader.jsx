@@ -1,5 +1,5 @@
-import React from 'react'
-import spinner from '../spinner.gif'
+import React from "react";
+import spinner from "../spinner.gif";
 
 const Loader = () => {
   return (
@@ -7,9 +7,8 @@ const Loader = () => {
       <div className="img">
         <img src={spinner} alt="LOADING" />
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default Loader
+export default Loader;
