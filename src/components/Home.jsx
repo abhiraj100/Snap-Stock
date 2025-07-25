@@ -2,6 +2,7 @@ import React from "react";
 import Loader from "./Loader";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const Home = ({ images, loader, saved, setSaved }) => {
   const saveImage = (img) => {
     let flag = false;
@@ -10,7 +11,7 @@ const Home = ({ images, loader, saved, setSaved }) => {
       for (let i = 0; i < saved.length; i++) {
         if (saved[i].id === img.id) {
           flag = true;
-          toast.info(" Image already exist !", {
+          toast.info("Image already exist !", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -27,7 +28,7 @@ const Home = ({ images, loader, saved, setSaved }) => {
     }
     if (!flag) {
       setSaved([...saved, img]);
-      toast.success(" Image Saved Successfully !", {
+      toast.success("Image Saved Successfully !", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,

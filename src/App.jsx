@@ -36,8 +36,8 @@ const App = () => {
   }, [search]);
 
   useEffect(() => {
-    if (saved.length != 0) {
-      const json = JSON.stringify(saved);
+    if (saved.length !== 0) {
+      const json = JSON.stringify(saved);  // convert into string
       localStorage.setItem("images", json);
     }
   }, [saved]);
