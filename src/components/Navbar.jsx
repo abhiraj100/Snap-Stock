@@ -19,7 +19,7 @@ const Navbar = ({ setSearch }) => {
         <div className="button btn btn-outline-info mx-3" onClick={() => {setSearch("dubai"); navigate('/')}}>Dubai</div>
         
     {
-      location.pathname =='/saved' ? (
+      location.pathname === '/saved' ? (
         <div className="button btn btn-warning mx-3" onClick={() => navigate('/')}>Home</div>)
          : (<div className="button btn btn-warning mx-3" onClick={() => navigate('/saved')}>Saved</div>)
     }
