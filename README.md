@@ -25,10 +25,21 @@ Snap-Stock is a modern React-based stock image gallery that fetches high-quality
 
 ---
 
-## 📷 Screenshots
+## 📁 Folder Structure
 
-> *(Add your screenshots here, or use the example placeholder below)*
-![Homepage](<img width="1366" height="606" alt="image" src="https://github.com/user-attachments/assets/1d366aa0-2ccd-4354-aec9-9e1e81082258" />)
+src/
+├── components/
+│   ├── HeaderBar.jsx        # Top navigation with menus & saved tab
+│   ├── ImageGrid.jsx        # Component for rendering the image grid
+│   └── SavedImages.jsx      # Displays saved images
+├── pages/
+│   └── HomePage.jsx         # Main landing page with images
+├── services/
+│   └── pexelsApi.js         # Axios logic to call Pexels API
+├── App.js                   # Main app component with routes
+├── index.js                 # Entry point
+└── styles/                  # Optional custom CSS/Tailwind
+
 
 ---
 
